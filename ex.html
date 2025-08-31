@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Emergency Alert & Helpline System</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&display=swap"
+          rel="stylesheet">
+     <style>
+          body {
+               font-family: 'Inter', sans-serif;
+               background-color: #f0f4f8;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 100vh;
+               color: #1e293b;
+          }
+
+          .tamil {
+               font-family: 'Noto Sans Tamil', sans-serif;
+          }
+
+          .presentation-container {
+               width: 100%;
+               max-width: 1000px;
+               aspect-ratio: 16 / 9;
+          }
+
+          .carousel,
+          .carousel-inner,
+          .carousel-item {
+               height: 100%;
+          }
+
+          .slide {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               padding: 2rem;
+               text-align: center;
+               background-size: cover;
+               background-position: center;
+               height: 100%;
+          }
+
+          .slide-content {
+               background-color: rgba(255, 255, 255, 0.9);
+               padding: 2rem;
+               border-radius: 1rem;
+               backdrop-filter: blur(10px);
+               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+          }
+
+          .helpline-card {
+               transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+
+          .helpline-card:hover {
+               transform: translateY(-5px);
+               box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          }
+
+          /* Styling for Bootstrap carousel controls */
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
+               background-color: rgba(0, 0, 0, 0.5);
+               border-radius: 50%;
+               padding: 1rem;
+          }
+     </style>
+</head>
+
+<body>
+
+     <div class="presentation-container shadow-lg rounded-4 overflow-hidden">
+          <div id="presentationCarousel" class="carousel slide h-100" data-bs-ride="false">
+               <div class="carousel-inner">
+                    <!-- Slide 1: Title -->
+                    <div class="carousel-item active"
+                         style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
+                         <div class="slide">
+                              <div class="slide-content">
+                                   <h1 class="display-4 fw-bold text-primary">Emergency Alert & Helpline System</h1>
+                                   <h2 class="h1 fw-bold mt-3 tamil text-danger">அவசர எச்சரிக்கை மற்றும் உதவி அமைப்பு
+                                   </h2>
+                                   <p class="mt-4 fs-5 text-secondary">Immediate Response, Saving Lives</p>
+                                   <p class="mt-2 tamil text-secondary">உடனடி பதில், உயிர்களைக் காப்பாற்றும்</p>
+
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-inner">
+                         <!-- Slide 1: Title -->
+                         <div class="carousel-item active"
+                              style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <p class="mt-5 fs-5 fw-semibold">By:</p>
+                                        <p class="text-muted">Dept: ECE, VSE Engineering</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 2: Introduction -->
+                         <div class="carousel-item" style="background-color: #e0f2fe;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Introduction <span class="tamil">(அறிமுகம்)</span></h2>
+                                        <ul class="list-unstyled mt-4 text-start fs-5">
+                                             <li class="mb-3"><strong class="text-info-emphasis">What is an
+                                                       emergency?</strong> A
+                                                  sudden, unforeseen crisis that requires immediate action. <br><span
+                                                       class="tamil text-secondary"><strong>அவசரம் என்றால்
+                                                            என்ன?</strong>
+                                                       உடனடி நடவடிக்கை தேவைப்படும் ஒரு திடீர், எதிர்பாராத
+                                                       நெருக்கடி.</span>
+                                             </li>
+                                             <li class="mb-3"><strong class="text-info-emphasis">The Golden
+                                                       Hour:</strong>
+                                                  The first
+                                                  60 minutes after an accident are critical for survival. <br><span
+                                                       class="tamil text-secondary"><strong>தங்க நேரம்:</strong> ஒரு
+                                                       விபத்து
+                                                       நடந்த முதல் 60 நிமிடங்கள் உயிர் பிழைக்க மிகவும்
+                                                       முக்கியமானவை.</span>
+                                             </li>
+                                             <li><strong class="text-info-emphasis">Why are alerts vital?</strong> Quick
+                                                  alerts and
+                                                  helpline access can make the difference between life and death.
+                                                  <br><span class="tamil text-secondary"><strong>எச்சரிக்கைகள் ஏன்
+                                                            அவசியம்?</strong>
+                                                       விரைவான எச்சரிக்கைகள் மற்றும் உதவி எண்களை அணுகுவது
+                                                       உயிர்வாழ்விற்கும்
+                                                       இறப்பிற்கும் உள்ள வித்தியாசத்தை ஏற்படுத்தும்.</span>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 3: Emergency Alert System -->
+                         <div class="carousel-item" style="background-color: #ffedd5;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Emergency Alert System <span class="tamil">(அவசர
+                                                  எச்சரிக்கை
+                                                  அமைப்பு)</span></h2>
+                                        <p class="mt-3 fs-5">A system to alert people during danger. <span
+                                                  class="tamil text-secondary">ஆபத்து காலத்தில் மக்களை எச்சரிக்கும் ஒரு
+                                                  அமைப்பு.</span></p>
+                                        <div class="row mt-4 text-start fs-5 w-100">
+                                             <div class="col-md-6">
+                                                  <h3 class="fw-bold h5 text-warning-emphasis">Types (வகைகள்):</h3>
+                                                  <ul class="list-unstyled ps-4" style="list-style-type: disc;">
+                                                       <li>Natural Disasters <span class="tamil text-secondary">(இயற்கை
+                                                                 பேரழிவுகள்)</span></li>
+                                                       <li>Health Emergencies <span
+                                                                 class="tamil text-secondary">(சுகாதார
+                                                                 அவசரநிலைகள்)</span></li>
+                                                       <li>Public Safety Threats <span
+                                                                 class="tamil text-secondary">(பொது
+                                                                 பாதுகாப்பு அச்சுறுத்தல்கள்)</span></li>
+                                                  </ul>
+                                             </div>
+                                             <div class="col-md-6 mt-3 mt-md-0">
+                                                  <h3 class="fw-bold h5 text-warning-emphasis">Modes (முறைகள்):</h3>
+                                                  <ul class="list-unstyled ps-4" style="list-style-type: disc;">
+                                                       <li>SMS & Cell Broadcasts <span
+                                                                 class="tamil text-secondary">(குறுஞ்செய்தி)</span></li>
+                                                       <li>Sirens <span
+                                                                 class="tamil text-secondary">(ஒலிப்பான்கள்)</span>
+                                                       </li>
+                                                       <li>Mobile Apps <span class="tamil text-secondary">(மொபைல்
+                                                                 செயலிகள்)</span></li>
+                                                       <li>IoT Devices <span class="tamil text-secondary">(IoT
+                                                                 சாதனங்கள்)</span></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 4: Ambulance Helpline -->
+                         <div class="carousel-item" style="background-color: #fee2e2;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <img src="https://placehold.co/100x100/dc3545/ffffff?text=108"
+                                             alt="108 Ambulance" class="rounded-circle mb-3">
+                                        <h2 class="h1 fw-bold text-danger">Ambulance Helpline: 108</h2>
+                                        <h3 class="h2 fw-bold tamil text-danger-emphasis">ஆம்புலன்ஸ் உதவி எண்: 108</h3>
+                                        <p class="mt-3 fs-5">India’s primary emergency ambulance number. <span
+                                                  class="tamil text-secondary">இந்தியாவின் முதன்மை அவசர ஆம்புலன்ஸ்
+                                                  எண்.</span></p>
+                                        <ul class="list-unstyled mt-3 text-start fs-5">
+                                             <li class="mb-2"><strong>How it works:</strong> Call 108 → Call center
+                                                  assesses
+                                                  situation → Nearest ambulance is dispatched. <br><span
+                                                       class="tamil text-secondary"><strong>செயல்படும் விதம்:</strong>
+                                                       108க்கு அழைக்கவும் → அழைப்பு மையம் நிலையை மதிப்பிடுகிறது →
+                                                       அருகிலுள்ள
+                                                       ஆம்புலன்ஸ் அனுப்பப்படுகிறது.</span></li>
+                                             <li><strong>GPS Tracking:</strong> Ensures the closest ambulance reaches
+                                                  quickly, saving crucial time. <br><span
+                                                       class="tamil text-secondary"><strong>GPS கண்காணிப்பு:</strong>
+                                                       அருகிலுள்ள ஆம்புலன்ஸ் விரைவாக சென்றடைவதை உறுதிசெய்து, முக்கியமான
+                                                       நேரத்தை மிச்சப்படுத்துகிறது.</span></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 5: Other Helplines -->
+                         <div class="carousel-item" style="background-color: #dbeafe;">
+                              <div class="slide w-100">
+                                   <h2 class="h1 fw-bold">Other Important Helplines</h2>
+                                   <h3 class="h2 fw-bold tamil text-secondary">மற்ற முக்கிய உதவி எண்கள்</h3>
+                                   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mt-3 w-100">
+                                        <div class="col">
+                                             <div
+                                                  class="card h-100 helpline-card text-primary-emphasis bg-primary-subtle p-3 fw-bold">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                       fill="currentColor"
+                                                       class="bi bi-exclamation-triangle-fill mx-auto mb-2"
+                                                       viewBox="0 0 16 16">
+                                                       <path
+                                                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                                  </svg>Police (காவல்துறை)<br><span class="fs-2">100</span>
+                                             </div>
+                                        </div>
+                                        <div class="col">
+                                             <div
+                                                  class="card h-100 helpline-card text-danger-emphasis bg-danger-subtle p-3 fw-bold">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                       fill="currentColor" class="bi bi-fire mx-auto mb-2"
+                                                       viewBox="0 0 16 16">
+                                                       <path
+                                                            d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 8 7 7.5 7 7.5c-.125-1.25.375-1.5 1-1.5.625 0 1.125.25 1 1.5 0 0 .875.5 1.75 1.5C11.75 11 12 12.25 12 13.25 12 14 10.657 15 9 15c-.25 0-.5-.078-.727-.224-.224.133-.46.213-.69.213-.414 0-.734-.156-.957-.45z" />
+                                                  </svg>Fire (தீயணைப்பு)<br><span class="fs-2">101</span>
+                                             </div>
+                                        </div>
+                                        <div class="col">
+                                             <div
+                                                  class="card h-100 helpline-card text-info-emphasis bg-info-subtle p-3 fw-bold">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                       fill="currentColor" class="bi bi-gender-female mx-auto mb-2"
+                                                       viewBox="0 0 16 16">
+                                                       <path fill-rule="evenodd"
+                                                            d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13H6a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5" />
+                                                  </svg>Women (பெண்கள்)<br><span class="fs-2">1091</span>
+                                             </div>
+                                        </div>
+                                        <div class="col">
+                                             <div
+                                                  class="card h-100 helpline-card text-success-emphasis bg-success-subtle p-3 fw-bold">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                       fill="currentColor" class="bi bi-person-standing mx-auto mb-2"
+                                                       viewBox="0 0 16 16">
+                                                       <path
+                                                            d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a1.5 1.5 0 0 0-3 0V8a.5.5 0 0 1-1 0V6.5a1.5 1.5 0 0 0-3 0z" />
+                                                  </svg>Child (குழந்தைகள்)<br><span class="fs-2">1098</span>
+                                             </div>
+                                        </div>
+                                        <div class="col">
+                                             <div
+                                                  class="card h-100 helpline-card text-warning-emphasis bg-warning-subtle p-3 fw-bold">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                       fill="currentColor" class="bi bi-cloud-fill mx-auto mb-2"
+                                                       viewBox="0 0 16 16">
+                                                       <path
+                                                            d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z" />
+                                                  </svg>Disaster Mgmt (பேரிடர்)<br><span class="fs-2">1070</span>
+                                             </div>
+                                        </div>
+                                        <div class="col">
+                                             <div
+                                                  class="card h-100 helpline-card text-body-emphasis bg-body-tertiary p-3 fw-bold">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                       fill="currentColor" class="bi bi-train-front-fill mx-auto mb-2"
+                                                       viewBox="0 0 16 16">
+                                                       <path
+                                                            d="M10.492.014a2.5 2.5 0 0 0-4.984 0L.343 11.433a.5.5 0 0 0 .63.67l.007-.003.953-.306.954.306.007.003a.5.5 0 0 0 .63-.67L3.343 1.433a1.5 1.5 0 0 1 2.99 0l.156.505h1.022l.156-.505a1.5 1.5 0 0 1 2.99 0zM4 16a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2m-1.5-2a.5.5 0 0 0 0-1h-5a.5.5 0 0 0 0 1zM2 13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5zM7.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5" />
+                                                  </svg>Railway (ரயில்வே)<br><span class="fs-2">139</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 6: Technology's Role -->
+                         <div class="carousel-item" style="background-color: #ecfdf5;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Technology's Role (ECE)</h2>
+                                        <h3 class="h2 fw-bold tamil text-secondary">தொழில்நுட்பத்தின் பங்கு (ECE)</h3>
+                                        <p class="mt-3 fs-5">ECE engineers build smart alert systems. <span
+                                                  class="tamil text-secondary">ECE பொறியாளர்கள் έξυπனான எச்சரிக்கை
+                                                  அமைப்புகளை
+                                                  உருவாக்குகிறார்கள்.</span></p>
+                                        <ul class="list-unstyled mt-3 text-start fs-5">
+                                             <li class="mb-2"><strong>GSM/IoT Alerts:</strong> Systems that use mobile
+                                                  networks (GSM) and Internet of Things (IoT) to send automatic alerts.
+                                                  <br><span class="tamil text-secondary"><strong>GSM/IoT
+                                                            எச்சரிக்கைகள்:</strong> மொபைல் நெட்வொர்க்குகள் மற்றும் IoT
+                                                       பயன்படுத்தி தானியங்கி எச்சரிக்கைகளை அனுப்பும் அமைப்புகள்.</span>
+                                             </li>
+                                             <li class="mb-2"><strong>Sensors:</strong> Devices that detect fire, gas
+                                                  leaks,
+                                                  heart rate changes, or accidents. <br><span
+                                                       class="tamil text-secondary"><strong>சென்சார்கள்:</strong> தீ,
+                                                       எரிவாயு
+                                                       கசிவுகள், இதய துடிப்பு மாற்றங்கள் அல்லது விபத்துகளைக் கண்டறியும்
+                                                       சாதனங்கள்.</span></li>
+                                             <li><strong>Example:</strong> An accident sensor in a car can automatically
+                                                  detect a crash and send an alert with the location to 108. <br><span
+                                                       class="tamil text-secondary"><strong>உதாரணம்:</strong> ஒரு காரில்
+                                                       உள்ள
+                                                       விபத்து சென்சார், விபத்தை தானாகக் கண்டறிந்து, இருப்பிடத்துடன்
+                                                       108க்கு
+                                                       எச்சரிக்கை அனுப்பும்.</span></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 7: Case Study -->
+                         <div class="carousel-item" style="background-color: #faf5ff;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Case Study / Example</h2>
+                                        <h3 class="h2 fw-bold tamil text-secondary">ஒரு ஆய்வு / உதாரணம்</h3>
+                                        <div class="row mt-4 text-start fs-5">
+                                             <div class="col-md-6 mb-3 mb-md-0">
+                                                  <div class="bg-white p-3 rounded shadow-sm h-100">
+                                                       <h4 class="fw-bold h5" style="color: #6f42c1;">Cyclone 'Gaja'
+                                                            (Tamil
+                                                            Nadu)</h4>
+                                                       <p class="mt-2 small"><span class="tamil text-secondary">'கஜா'
+                                                                 புயல்
+                                                                 தாக்குவதற்கு முன்பு கடலோரப் பகுதி மக்களுக்கு பெருமளவில்
+                                                                 SMS
+                                                                 எச்சரிக்கைகள் அனுப்பப்பட்டன. இந்த முன்னெச்சரிக்கை,
+                                                                 மக்கள்
+                                                                 சரியான நேரத்தில் வெளியேற உதவியதால் ஆயிரக்கணக்கான
+                                                                 உயிர்களைக்
+                                                                 காப்பாற்றியது.</span></p>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                  <div class="bg-white p-3 rounded shadow-sm h-100">
+                                                       <h4 class="fw-bold h5" style="color: #6f42c1;">Automatic Crash
+                                                            Alerts
+                                                            in Cars</h4>
+                                                       <p class="mt-2 small"><span class="tamil text-secondary">நவீன
+                                                                 கார்களில் உள்ள சென்சார்கள், ஒரு பெரிய விபத்துக்குப்
+                                                                 பிறகு
+                                                                 தானாகவே அவசர சேவைகளை அழைக்கின்றன. பயணிகள் சுயநினைவின்றி
+                                                                 இருந்தாலும் காரின் இருப்பிடத்தை இது
+                                                                 தெரிவிக்கிறது.</span>
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 8: Advantages -->
+                         <div class="carousel-item" style="background-color: #f0fdf4;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Advantages <span class="tamil">(நன்மைகள்)</span></h2>
+                                        <ul class="list-unstyled ps-4 mt-4 text-start fs-5"
+                                             style="list-style-type: disc;">
+                                             <li class="mb-2"><strong>Faster Response:</strong> Reduces the time it
+                                                  takes for
+                                                  help to arrive. <br><span class="tamil text-secondary"><strong>விரைவான
+                                                            பதில்:</strong> உதவி வந்து சேரும் நேரத்தைக்
+                                                       குறைக்கிறது.</span>
+                                             </li>
+                                             <li class="mb-2"><strong>Saves Lives:</strong> Timely medical care and
+                                                  rescue
+                                                  during accidents & disasters is critical.<br><span
+                                                       class="tamil text-secondary"><strong>உயிர்களைக்
+                                                            காப்பாற்றுகிறது:</strong> விபத்துக்கள் மற்றும் பேரழிவுகளின்
+                                                       போது
+                                                       சரியான நேரத்தில் மருத்துவ பராமரிப்பு மற்றும் மீட்பு மிகவும்
+                                                       முக்கியம்.</span></li>
+                                             <li class="mb-2"><strong>Reduces Panic:</strong> Reliable information helps
+                                                  people stay calm and make better decisions.<br><span
+                                                       class="tamil text-secondary"><strong>பீதியைக்
+                                                            குறைக்கிறது:</strong>
+                                                       நம்பகமான தகவல்கள் மக்கள் அமைதியாக இருக்கவும் சிறந்த முடிவுகளை
+                                                       எடுக்கவும் உதவுகின்றன.</span></li>
+                                             <li><strong>Accessible Everywhere:</strong> Centralized numbers work across
+                                                  the
+                                                  country.<br><span class="tamil text-secondary"><strong>எல்லா
+                                                            இடங்களிலும்
+                                                            அணுகலாம்:</strong> மையப்படுத்தப்பட்ட எண்கள் நாடு முழுவதும்
+                                                       செயல்படுகின்றன.</span></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 9: Challenges -->
+                         <div class="carousel-item" style="background-color: #fff1f2;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Challenges <span class="tamil">(சவால்கள்)</span></h2>
+                                        <ul class="list-unstyled ps-4 mt-4 text-start fs-5"
+                                             style="list-style-type: disc;">
+                                             <li class="mb-2"><strong>Network Issues:</strong> Poor mobile network in
+                                                  remote
+                                                  or rural areas can delay alerts.<br><span
+                                                       class="tamil text-secondary"><strong>நெட்வொர்க்
+                                                            சிக்கல்கள்:</strong>
+                                                       தொலைதூர அல்லது கிராமப்புறங்களில் மோசமான மொபைல் நெட்வொர்க்
+                                                       எச்சரிக்கைகளை தாமதப்படுத்தலாம்.</span></li>
+                                             <li class="mb-2"><strong>Lack of Awareness:</strong> Many people are still
+                                                  unaware of the correct emergency numbers.<br><span
+                                                       class="tamil text-secondary"><strong>விழிப்புணர்வு
+                                                            இல்லாமை:</strong>
+                                                       சரியான அவசர எண்கள் பற்றி பலர் இன்னும் அறியாமல் உள்ளனர்.</span>
+                                             </li>
+                                             <li><strong>Traffic Delays:</strong> Ambulances and rescue vehicles often
+                                                  get
+                                                  stuck in traffic, losing precious time.<br><span
+                                                       class="tamil text-secondary"><strong>போக்குவரத்து
+                                                            தாமதங்கள்:</strong>
+                                                       ஆம்புலன்ஸ்கள் மற்றும் மீட்பு வாகனங்கள் அடிக்கடி போக்குவரத்தில்
+                                                       சிக்கி,
+                                                       பொன்னான நேரத்தை இழக்கின்றன.</span></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 10: Conclusion -->
+                         <div class="carousel-item" style="background-color: #f5f3ff;">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="h1 fw-bold">Conclusion <span class="tamil">(முடிவுரை)</span></h2>
+                                        <ul class="list-unstyled mt-4 text-center fs-5">
+                                             <li class="mb-3">Emergency alerts and helplines are essential for public
+                                                  safety.
+                                                  <br><span class="tamil text-secondary">பொதுப் பாதுகாப்பிற்கு அவசர
+                                                       எச்சரிக்கைகளும் உதவி எண்களும் அவசியமானவை.</span>
+                                             </li>
+                                             <li class="mb-5">Technology gives us the power to build smarter, faster
+                                                  systems.
+                                                  <br><span class="tamil text-secondary">தொழில்நுட்பம் நமக்கு சிறந்த,
+                                                       வேகமான
+                                                       அமைப்புகளை உருவாக்க சக்தியளிக்கிறது.</span>
+                                             </li>
+                                             <li class="fw-bold display-6 text-primary">Timely Help = Saved Lives
+                                                  <br><span class="tamil">சரியான நேரத்தில் உதவி = காப்பாற்றப்பட்ட
+                                                       உயிர்கள்</span>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slide 11: Thank You -->
+                         <div class="carousel-item"
+                              style="background-image: linear-gradient(to right top, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5, #5ffbf1, #46eefa, #41dfff, #52cffe);">
+                              <div class="slide">
+                                   <div class="slide-content">
+                                        <h2 class="display-3 fw-bold text-dark">Thank You</h2>
+                                        <h3 class="display-4 fw-bold tamil text-secondary mt-3">நன்றி</h3>
+                                        <p class="mt-5 fs-4">Any Questions?</p>
+                                        <p class="mt-2 fs-5 tamil">கேள்விகள் ஏதேனும் உள்ளதா?</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#presentationCarousel"
+                         data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#presentationCarousel"
+                         data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                    </button>
+               </div>
+          </div>
+
+          <!-- Bootstrap JS Bundle -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+               xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+               crossorigin="anonymous"></script>
+</body>
+
+</html>
